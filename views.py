@@ -1,4 +1,5 @@
 from .serializers import LogOutSerializer
+from rest_framework import generics, views, permissions
 
 class LogOutAPIView(generics.GenericAPIView):
   serializer_class = LogOutSerializer
